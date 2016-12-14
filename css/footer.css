@@ -1,0 +1,143 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 522px;
+}
+
+
+
+footer .container_60 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin: auto;
+    height: 290px;
+    width: 61.20058565%;
+}
+
+footer .about_us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 594px;
+}
+
+
+footer .about_us .image_block {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    height: 275px;
+    width: 50%;
+    margin: 20px 10px;
+    background: url(../pic/about_us.png) 50% 50% no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+footer .about_us .text_block {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    width: 30%;
+    height: 140px;
+    margin: 70px auto auto 7%;
+    color: #000000;
+}
+
+footer .about_us  h1 {
+    font-size: 2.8em;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+footer .about_us div {
+    line-height: 1.5em;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+footer .about_us a {
+    color: #000000;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+}
+
+footer .info_block {
+    width: 100%;
+    background: #000;
+}
+
+footer .info_block .background_image {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    background: url("../pic/wood_background_10.png") no-repeat;
+    opacity: 0.1;
+    background-size: cover;
+    width: 100%;
+}
+
+
+footer .info_block .container_60 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 2em;
+    padding: 0.6em 0;
+    color: white;
+}
+
+
+footer .info_block .container_60 div {
+    opacity: 0.2;
+    font-size: 0.7em;
+    padding: 0.5em 0;
+    width: 33%;
+}
+
+
+footer .info_block .container_60 .autor {
+    text-align: right;
+}
+
+
+footer .info_block .container_60 h1 {
+    font-size: 1.5em;
+    letter-spacing: 4px;
+}
+
+
+
+.anchor_up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #bea67c;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

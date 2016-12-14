@@ -1,0 +1,308 @@
+header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    width: 100%;
+    height: 742px;
+    margin-bottom: 65px;
+}
+
+
+header .background_head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
+
+header .background_head .pile {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 54.6120056%;
+    height: 100%;
+    background: black url("../pic/wood_background_10.png") no-repeat;
+    background-size: cover;
+}
+
+
+
+header .background_head .tree {
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 45.38%;
+    height: 100%;
+    background: black url("../pic/wood_pile_background_10.png") no-repeat;
+
+    background-size: cover;
+}
+
+header .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+
+header .container .top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    width: 100%;
+    height: 50px;
+}
+
+header .container .mid {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-between;
+    width: 100%;
+    height: 69%;
+}
+
+header .container .mid .slider_number {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100px;
+}
+
+header .container .mid .slider_number > input {
+    display: none;
+}
+
+header .container .mid .slider_number label > .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(90deg);
+    color: #bea67c;
+    font-size: 2.5em;
+    display: none;
+}
+
+
+header .container .logo_mini {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-self: flex-start;
+    color: white;
+    width: 21.5%;
+    font-size: 1.7em;
+    letter-spacing: 6px;
+    height: 50px;
+}
+
+header .container .menu_block {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    align-content: flex-end;
+    height: 50px;
+    width: 49%;
+}
+
+header .container .menu_block li {
+    display: inline-block;
+    color: white;
+    padding: 10px 35px;
+    font-size: 0.65em;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+header .container .mid .slider_number .controls label {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    height: 5px;
+    margin: 25px 12px 0 16px;
+    position: relative;
+    width: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+header .container .mid .slider_number .controls label::after {
+    border: 2px solid #bea67c;
+    content: " ";
+    display: block;
+    height: 5px;
+    position: absolute;
+    width: 5px;
+    background-color: #bea67c;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 0.2;
+}
+
+header .container .mid .slider_number .controls label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1)::after,
+#slide2:checked ~ .controls label:nth-of-type(2)::after,
+#slide3:checked ~ .controls label:nth-of-type(3)::after,
+#slide4:checked ~ .controls label:nth-of-type(4)::after {
+    opacity: 1;
+}
+
+header .container .mid .slider_number .controls label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1) .number,
+#slide2:checked ~ .controls label:nth-of-type(2) .number,
+#slide3:checked ~ .controls label:nth-of-type(3) .number,
+#slide4:checked ~ .controls label:nth-of-type(4) .number {
+    display: flex;
+    flex-direction: column;
+}
+
+
+header .container .logo_block {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+    width: 51%;
+
+}
+
+header .container .logo_block .logo {
+    position: relative;
+    display: flex;
+    /* justify-content: flex-start; */
+    flex-direction: row;
+    align-self: flex-start;
+    font-size: 4.4em;
+    letter-spacing: 15px;
+    color: #bea67c;
+    margin: 0;
+    margin-bottom: 0.35em;
+
+}
+
+.container .button, .button {
+    display: flex;
+    /* float: left; */
+    flex-direction: column;
+    justify-content: center;
+    /* align-content: center; */
+    text-align: center;
+    width: 40%;
+    border: 2px solid white;
+    padding: 10px 15px;
+    font-size: 0.6em;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    height: 20px;
+    width: 42%;
+}
+
+.container .button a {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.container .button a::after {
+    padding-left: 10px;
+    content: url("../pic/long_arrow.png");
+}
+
+
+header .container .logo_block .scroll {
+    display: block;
+    width: 50%;
+    height: auto;
+
+}
+
+header .container .logo_block .scroll .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50px;
+
+}
+
+header .container .logo_block .scroll .image::before {
+    display: flex;
+    flex-direction: row;
+    content: url("../pic/mouse_pic.png");
+    height: auto;
+    width: 100%;
+}
+
+header .container .logo_block .scroll .image::after {
+    display: flex;
+    align-content: center;
+    content: url("../pic/long_arrow_right.png");
+    height: auto;
+    width: 100%;
+
+}
+
+
+header .container .logo_block .scroll span {
+    font-size: 0.6em;
+    transform: rotate(90deg); /* don't work */
+    opacity: 0.2;
+    height: 50px;
+}
+
+
+header .container .label {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-self: flex-start;
+    color: #bea67c;
+    opacity: 0.2;
+    font-size: 0.65em;
+    letter-spacing: 3px;
+    height: 40%;
+    width: 1em;
+}
+
+header .container .label .rotate {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 170px;
+    height: 10px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    padding: 215px 0 0 20px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+    header {
+        height: 560px;
+    }
+}

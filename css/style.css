@@ -1,0 +1,52 @@
+html, body {
+    font: normal 100% "ProximaNova-light",  "ProximaNova-semibold", "ProximaNova-bold", Calibri, Candara, sans-serif;
+    width: 100%;
+    height: auto;
+}
+
+
+#page {
+    width: 100%;
+    height: auto;
+}
+
+@font-face {
+    font-family: "ProximaNova-light";
+    src: url("../font/Proxima_Nova_Light.otf");
+}
+
+@font-face {
+    font-family: "ProximaNova-semibold";
+    src: url("../font/Proxima_Nova_Semibold.otf");
+}
+
+@font-face {
+    font-family: "ProximaNova-bold";
+    src: url("../font/Proxima_Nova_Bold.otf");
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: inherit;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-family: ProximaNova-bold;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 63.88760%;
+    background: transparent;
+    margin: 0 auto;
+}
+
