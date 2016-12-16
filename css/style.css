@@ -12,17 +12,17 @@ html, body {
 
 @font-face {
     font-family: "ProximaNova-light";
-    src: url("../font/Proxima_Nova_Light.otf");
+    src: url("../static/font/Proxima_Nova_Light.otf");
 }
 
 @font-face {
     font-family: "ProximaNova-semibold";
-    src: url("../font/Proxima_Nova_Semibold.otf");
+    src: url("../static/font/Proxima_Nova_Semibold.otf");
 }
 
 @font-face {
     font-family: "ProximaNova-bold";
-    src: url("../font/Proxima_Nova_Bold.otf");
+    src: url("../static/font/Proxima_Nova_Bold.otf");
 }
 
 a {
@@ -47,6 +47,11 @@ li {
 .container {
     width: 63.88760%;
     background: transparent;
+    margin: 0 auto;
+}
+
+.container_80 {
+    width: 80.3806735%;
     margin: 0 auto;
 }
 
