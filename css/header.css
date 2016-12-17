@@ -56,8 +56,8 @@ header .slogan {
     flex-direction: column;
     width: 100%;
     font-size: 4em;
-    letter-spacing: 2.7px;
-    margin-top: 146px;
+    letter-spacing: 3px;
+    margin-top: 152px;
     line-height: 1em;
     background: url("../static/pic/rec_top.png") 31.5% no-repeat;
     background-size: contain;
@@ -111,6 +111,12 @@ header .menu .menu_item a {
 
 
 header .button_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 145px;
 
 }
 
@@ -118,12 +124,55 @@ header .button_block .buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 44.262295%;
+    width: 44%;
     margin: 0 auto;
 }
 
-
 header .button_block .buttons .button {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 46%;
+    text-align: left;
+    font-size: 0.7em;
+    height: 56px;
+    background: #5e42b0;
+    border-radius: 50px;
+    z-index: 999;
 }
+
+header .button_block .buttons .image_block {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+    height: 30px;
+    margin: 15px auto;
+}
+
+header .button_block .buttons .apple .image_block {
+    background: url(../static/pic/Icon_Apple.png) no-repeat;
+    background-size: contain;
+    margin-left: 30px;
+}
+
+header .button_block .buttons .google .image_block {
+    background: url("../static/pic/Icon_Google_Play.png") no-repeat;
+    background-size: contain;
+    margin-left: 40px;
+}
+
+
+header .button_block .buttons .button .text_block {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+    margin-left: 0;
+    line-height: 1em;
+}
+
+
+
+
