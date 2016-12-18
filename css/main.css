@@ -2,6 +2,111 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 2072px;
+    height: auto;
     width: auto;
+
 }
+
+.white {
+    height: 150px;
+    z-index: -1;
+}
+
+.violet {
+    background: #5e42b0;
+    height: 215px;
+    z-index: -1;
+}
+
+.grey {
+    background: #f6f4fa;
+    height: 180px;
+    z-index: -1;
+}
+
+.blue {
+    background: #0a0e34;
+    height: 215px;
+    z-index: -1;
+
+}
+
+.grey_text {
+    color: #f6f4fa;
+}
+
+main .full_right_list, main .full_left_list {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    height: 685px;
+    float: right;
+    justify-content: space-between;
+}
+
+
+
+main .list_header {
+    font-size: 4em;
+    letter-spacing: 1px;
+    color: #e7e7e7;
+    margin-top: 65px;
+}
+
+
+main .full_right_list .container_50 {
+    float: right;
+}
+
+main .full_right_list .footballer {
+    display: inline-flex;
+    float: left;
+    position: absolute;
+    top: 720px;
+    left: 12%;
+    height: 100%;
+    width: 50%;
+    overflow: visible;
+    background: url(../static/pic/footballer.png) no-repeat;
+    background-size: auto;
+    z-index: 999;
+ }
+
+main .full_left_list .basketball_player {
+    float: left;
+    position: absolute;
+    top: 1370px;
+    right: 0;
+    height: 750px;
+    width: 60%;
+    overflow: visible;
+    background: url(../static/pic/basketball_player.png) no-repeat;
+    background-size: auto;
+    z-index: 999;
+}
+
+main .full_right_list ul li, main .full_left_list ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+main .full_right_list h2, main .full_left_list h2,
+main .full_right_list h3, main .full_left_list h3 {
+    display: inline-flex;
+}
+
+main .full_right_list h2, main .full_left_list h2 {
+    font-size: 1.5em;
+    line-height: 2em;
+    color: #e7e7e7;
+}
+
+main .full_right_list h3, main .full_left_list h3 {
+    border-bottom: 1px solid #5e42b0;
+    vertical-align: super;
+    font-size: 0.8em;
+}
+
+
