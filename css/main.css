@@ -14,7 +14,7 @@ main {
 
 .violet {
     background: #5e42b0;
-    height: 215px;
+    height: 212px;
     z-index: -1;
 }
 
@@ -26,7 +26,7 @@ main {
 
 .blue {
     background: #0a0e34;
-    height: 215px;
+    height: 190px;
     z-index: -1;
 
 }
@@ -37,9 +37,10 @@ main {
 
 main .full_right_list, main .full_left_list {
     display: inline-flex;
+    position: relative;
     flex-direction: column;
     width: 100%;
-    height: 685px;
+    height: 680px;
     float: right;
     justify-content: space-between;
 }
@@ -62,8 +63,8 @@ main .full_right_list .footballer {
     display: inline-flex;
     float: left;
     position: absolute;
-    top: 720px;
-    left: 12%;
+    top: 20px;
+    left: 14.5%;
     height: 100%;
     width: 50%;
     overflow: visible;
@@ -75,22 +76,33 @@ main .full_right_list .footballer {
 main .full_left_list .basketball_player {
     float: left;
     position: absolute;
-    top: 1370px;
+    top: -20px;
     right: 0;
-    height: 750px;
-    width: 60%;
+    height: 650px;
+    width: 58%;
     overflow: visible;
     background: url(../static/pic/basketball_player.png) no-repeat;
     background-size: auto;
     z-index: 999;
 }
 
-main .full_right_list ul li, main .full_left_list ul li {
+main .full_right_list ul li:not(:first-child),
+main .full_left_list ul li:not(:first-child) {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
+
+
+main .full_left_list ul .grey {
+    height: 195px;
+}
+
+main .full_left_list ul .white .container_50 {
+    padding-top: 0;
+}
+
 
 main .full_right_list h2, main .full_left_list h2,
 main .full_right_list h3, main .full_left_list h3 {
@@ -99,6 +111,7 @@ main .full_right_list h3, main .full_left_list h3 {
 
 main .full_right_list h2, main .full_left_list h2 {
     font-size: 1.5em;
+    letter-spacing: 3px;
     line-height: 2em;
     color: #e7e7e7;
 }
@@ -109,4 +122,119 @@ main .full_right_list h3, main .full_left_list h3 {
     font-size: 0.8em;
 }
 
+
+main .image_list_block {
+    display: flex;
+    flex-direction: column;
+    height: 1560px;
+    width: 100%;
+}
+
+main .image_list_block ul {
+    width: 100%;
+    height: 100%;
+}
+
+main .image_list_block ul .list_item {
+    height: 520px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main .image_list_block ul .left_image_block {
+
+}
+
+main .image_list_block ul .right_image_block {
+
+}
+
+main .image_list_block ul .list_item .number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    left: 45.6%;
+    top: 153px;
+    vertical-align: middle;
+    width: 8.8%;
+    height: 110px;
+    background: #5e42b0;
+}
+
+main .image_list_block ul .list_item .number h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    height: 1em;
+    border-bottom: 5px solid #8f7bc8;
+    color: #f6f4fa;
+    width: 1em;
+    margin: 0 auto;
+}
+
+main .image_list_block ul .list_item:first-child .image_block {
+    background: url("../static/pic/shutterstock.jpg") no-repeat;
+    background-size: cover;
+}
+
+main .image_list_block ul .list_item:nth-child(2) .image_block {
+    background: url(../static/pic/bigstock_couch.jpg) 95% 39% no-repeat;
+    background-size: 140%;
+    float: right;
+}
+
+main .image_list_block ul .list_item:last-child .image_block {
+    background: url("../static/pic/work_it.jpg") no-repeat;
+    background-size: cover;
+}
+
+main .image_list_block ul .list_item .text_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .image_list_block ul .list_item .container_75 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+}
+
+main .image_list_block ul .list_item .text {
+    font-size: 1.1em;
+    letter-spacing: 0.7px;
+}
+
+main .image_list_block ul .list_item:first-child .text {
+    width: 47%;
+    padding: 65px 0 0 5px;
+}
+
+main .image_list_block ul .list_item:nth-child(2) .text {
+    width: 60%;
+    padding: 35px 0;
+}
+
+main .image_list_block ul .list_item:last-child .text {
+    padding: 60px 0 0 5px;
+    width: 75%;
+    line-height: 1.1em;
+}
+
+main .image_list_block ul .list_item h2 {
+    font-size: 4em;
+    color: #e7e7e7;
+}
+
+main .image_list_block ul .list_item .container_70 {
+    margin-left: 19.8%;
+    height: 180px;
+}
 
