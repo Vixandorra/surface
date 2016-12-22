@@ -1,6 +1,116 @@
 footer {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 522px;
+    justify-content: space-around;
+    height: 683px;
+    width: 100%;
+    background: #0a0e34;
+    color: #f6f4fa;
 }
+
+footer .background_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url("../static/pic/back_footer.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
+
+footer .container_60 {
+    height: 450px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+footer .middle {
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    width: 75%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 120px 0 110px;
+    margin: 0 auto;
+}
+
+footer .middle .big_button {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../static/pic/download_button.png) no-repeat;
+    background-size: contain;
+    height: 100px;
+    width: 16%;
+    z-index: 999;
+    padding-right: 10px;
+}
+
+footer .middle .slogan {
+    width: 80%;
+    line-height: 2.5em;
+    height: 80px;
+    padding-top: 20px;
+}
+
+footer .middle .slogan h1 {
+    font-size: 4em;
+    letter-spacing: 3.3px;
+    line-height: 0.6em;
+}
+
+footer .middle .slogan h1 {
+    font-size: 1.5em;
+    letter-spacing: 1.8px;
+    line-height: 2em;
+}
+
+footer .button_block .buttons {
+    width: 52%;
+}
+
+footer .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+    width: 95%;
+    height: 30px;
+    margin: 0 auto;
+}
+
+footer .bottom ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .bottom ul .logo {
+    display: inline-flex;
+    flex-direction: row;
+    width: 135px;
+    height: 100%;
+    background: url("../static/pic/top_logo.png") no-repeat;
+    background-size: contain;
+    margin-left: 2px;
+}
+
+
+footer .bottom .bottom_item ul {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+    height: 100%;
+}
+
+
+

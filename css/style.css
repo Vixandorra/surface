@@ -80,4 +80,57 @@ li {
 }
 
 
+ .button_block .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 44%;
+    margin: 0 auto;
+}
+
+ .button_block .buttons .button {
+    display: flex;
+    flex-direction: row;
+    width: 46%;
+    text-align: left;
+    font-size: 0.7em;
+    height: 56px;
+    background: #5e42b0;
+    border-radius: 50px;
+    z-index: 999;
+}
+
+ .button_block .buttons .image_block {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+    height: 30px;
+    margin: 15px auto;
+}
+
+ .button_block .buttons .apple .image_block {
+    background: url(../static/pic/Icon_Apple.png) no-repeat;
+    background-size: contain;
+    margin-left: 30px;
+}
+
+ .button_block .buttons .google .image_block {
+    background: url("../static/pic/Icon_Google_Play.png") no-repeat;
+    background-size: contain;
+    margin-left: 40px;
+}
+
+
+ .button_block .buttons .button .text_block {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+    margin-left: 0;
+    line-height: 1em;
+}
+
 
