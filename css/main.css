@@ -18,6 +18,12 @@ main {
     z-index: -1;
 }
 
+@media screen and (max-width: 768px) {
+     .violet {
+         height: 205px;
+     }
+}
+
 .grey {
     background: #f6f4fa;
     height: 180px;
@@ -45,6 +51,12 @@ main .full_right_list, main .full_left_list {
     justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+    main .full_right_list, main .full_left_list {
+        height: 790px;
+    }
+}
+
 
 
 main .list_header {
@@ -52,6 +64,12 @@ main .list_header {
     letter-spacing: 1px;
     color: #e7e7e7;
     margin-top: 65px;
+}
+
+@media screen and (max-width: 768px) {
+    main .list_header {
+        font-size: 5.5em;
+    }
 }
 
 
@@ -72,6 +90,22 @@ main .full_right_list .footballer {
     background-size: auto;
     z-index: 999;
  }
+
+@media screen and (max-width: 768px) {
+    main .full_right_list .footballer {
+        display: inline-flex;
+        float: left;
+        position: absolute;
+        top: 85px;
+        left: -185px;
+        height: 100%;
+        width: 60%;
+        overflow: visible;
+        background: url(../static/pic/footballer.png) no-repeat;
+        /* background-size: cover; */
+        z-index: 999;
+    }
+}
 
 main .full_left_list .basketball_player {
     float: left;
@@ -120,6 +154,19 @@ main .full_right_list h3, main .full_left_list h3 {
     border-bottom: 1px solid #5e42b0;
     vertical-align: super;
     font-size: 0.8em;
+}
+
+
+@media screen and (max-width: 768px) {
+    main .full_left_list .container_60 {
+        width: 67%;
+        margin: 0;
+    }
+
+    main .full_left_list .container_50 {
+        width: 85%;
+        margin: 0 auto;
+    }
 }
 
 

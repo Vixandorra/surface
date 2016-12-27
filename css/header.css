@@ -8,6 +8,18 @@ header {
     color: white;
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: #0a0e34;
+        width: 100%;
+        height: 960px;
+        color: white;
+    }
+}
+
 
 header .background_head {
     display: flex;
@@ -30,6 +42,8 @@ header .top {
     width: 100%;
 }
 
+
+
 header .top .logo {
     display: inline-flex;
     flex-direction: row;
@@ -50,6 +64,36 @@ header .top .label {
     padding-top: 7px;
 }
 
+@media screen and (max-width: 768px) {
+    header .top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 35px;
+        padding: 53px 0 37px;
+        width: 100%;
+    }
+
+    header .top .logo {
+        display: inline-flex;
+        flex-direction: row;
+        width: 26%;
+        height: 100%;
+        background: url(../static/pic/top_logo.png) no-repeat;
+        background-size: contain;
+        margin-left: 2px;
+    }
+
+    header .top .label {
+        display: inline-flex;
+        flex-direction: row;
+        height: 100%;
+        font-size: 0.95em;
+        /* letter-spacing: 1px; */
+        padding-top: 7px;
+    }
+}
+
 
 header .slogan {
     display: flex;
@@ -61,6 +105,21 @@ header .slogan {
     line-height: 1em;
     background: url("../static/pic/rec_top.png") 31.5% no-repeat;
     background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+    header .slogan {
+        display: flex;
+        flex-direction: column;
+        width: 81%;
+        font-size: 3.9em;
+        letter-spacing: 4px;
+        /* line-height: 1em; */
+        background: url(../static/pic/rec_top.png) 31.5% no-repeat;
+        background-size: contain;
+        margin: 140px auto 0;
+        line-height: 1.25em;
+    }
 }
 
 header .slogan .slogan_left {
@@ -77,6 +136,17 @@ header .slogan .slogan_right {
     z-index: 100;
 }
 
+@media screen and (max-width: 768px) {
+    header .slogan .slogan_right {
+        width: 84%;
+        float: right;
+        text-align: left;
+        /* padding-right: 3px; */
+        z-index: 100;
+        margin: 0 18%;
+    }
+}
+
 
 header .menu {
     display: flex;
@@ -91,6 +161,20 @@ header .menu {
     font-size: 0.6em;
     color: #5e42b0;
     margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    header .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 25px;
+        letter-spacing: 0.5px;
+        font-size: 1.1em;
+        color: #5e42b0;
+        margin: 155px 0 auto;
+    }
 }
 
 
@@ -117,6 +201,17 @@ header .button_block {
     width: 100%;
     margin-top: 145px;
 
+}
+
+
+@media screen and (max-width: 768px) {
+    header .button_block {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin-top: 290px;
+    }
 }
 
 

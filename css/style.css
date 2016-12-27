@@ -50,9 +50,13 @@ li {
     margin: 0 auto;
 }
 
-.container_80 {
-    width: 80.3806735%;
-    margin: 0 auto;
+
+
+@media screen and (max-width: 768px) {
+    .container_80 {
+        width: 95%;
+        margin: 0 auto;
+    }
 }
 
 .container_75 {
@@ -65,6 +69,13 @@ li {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+    .container_70 {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
 .container_60 {
      width: 67%;
     margin: 0 auto;
@@ -72,6 +83,13 @@ li {
 
 .container_50 {
     width: 46.5%;
+}
+
+@media screen and (max-width: 768px) {
+    .container_50 {
+        width: 65%;
+        margin: 0 auto;
+    }
 }
 
 .container_50_const {
@@ -88,6 +106,13 @@ li {
     margin: 0 auto;
 }
 
+ @media screen and (max-width: 768px) {
+     .button_block .buttons {
+         width: 90%;
+         margin: 0 auto;
+     }
+ }
+
  .button_block .buttons .button {
     display: flex;
     flex-direction: row;
@@ -99,6 +124,21 @@ li {
     border-radius: 50px;
     z-index: 999;
 }
+
+ @media screen and (max-width: 768px) {
+     .button_block .buttons .button {
+         display: flex;
+         flex-direction: row;
+         width: 47%;
+         text-align: left;
+         font-size: 0.9em;
+         line-height: 1.2em;
+         height: 78px;
+         background: #5e42b0;
+         border-radius: 50px;
+         z-index: 999;
+     }
+ }
 
  .button_block .buttons .image_block {
     display: inline-flex;
@@ -121,6 +161,24 @@ li {
     margin-left: 40px;
 }
 
+ @media screen and (max-width: 768px) {
+     .button_block .buttons .image_block {
+         flex-direction: column;
+         justify-content: center;
+         width: 12%;
+         height: 35px;
+         margin: 20px 25px auto;
+     }
+
+     .button_block .buttons .apple .image_block {
+         margin-left: 45px;
+     }
+
+     .button_block .buttons .google .image_block {
+         margin-left: 60px;
+     }
+ }
+
 
  .button_block .buttons .button .text_block {
     display: inline-flex;
@@ -133,4 +191,8 @@ li {
     line-height: 1em;
 }
 
-
+@media screen and (max-width: 768px) {
+    .button_block .buttons .button .text_block {
+        line-height: 1.5em;
+    }
+}
