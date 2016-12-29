@@ -12,6 +12,12 @@ main {
     z-index: -1;
 }
 
+@media screen and (max-width: 768px) {
+    .white {
+        height: 170px;
+    }
+}
+
 .violet {
     background: #5e42b0;
     height: 212px;
@@ -28,6 +34,12 @@ main {
     background: #f6f4fa;
     height: 180px;
     z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+    .grey {
+        height: 235px;
+    }
 }
 
 .blue {
@@ -56,7 +68,6 @@ main .full_right_list, main .full_left_list {
         height: 790px;
     }
 }
-
 
 
 main .list_header {
@@ -120,6 +131,15 @@ main .full_left_list .basketball_player {
     z-index: 999;
 }
 
+@media screen and (max-width: 768px) {
+    main .full_left_list .basketball_player {
+        float: right;
+        position: absolute;
+        top: 35px;
+        right: 0;
+    }
+}
+
 main .full_right_list ul li:not(:first-child),
 main .full_left_list ul li:not(:first-child) {
     display: flex;
@@ -164,8 +184,26 @@ main .full_right_list h3, main .full_left_list h3 {
     }
 
     main .full_left_list .container_50 {
-        width: 85%;
+        width: 87%;
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main .full_right_list .container_50 h3,
+    main .full_left_list .container_50 h3 {
+        font-size: 1.3em;
+    }
+
+    main .full_right_list .container_50 h2,
+    main .full_left_list .container_50 h2 {
+        font-size: 2.2em;
+    }
+
+    main .full_right_list .text_block,
+    main .full_left_list .text_block {
+        font-size: 1.2em;
+        letter-spacing: 0.5px;
     }
 }
 
