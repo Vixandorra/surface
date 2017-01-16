@@ -16,6 +16,10 @@ main {
     .white {
         height: 170px;
     }
+
+    .full_left_list .white {
+        height: 165px;
+    }
 }
 
 .violet {
@@ -36,9 +40,20 @@ main {
     z-index: -1;
 }
 
+@media screen and (min-width: 769px){
+    .full_left_list ul .grey {
+        height: 195px;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     .grey {
         height: 235px;
+    }
+
+    .full_left_list ul .grey {
+        height: 230px;
     }
 }
 
@@ -47,6 +62,12 @@ main {
     height: 190px;
     z-index: -1;
 
+}
+
+@media screen and (max-width: 768px) {
+    .full_left_list .blue {
+        height: 205px;
+    }
 }
 
 .grey_text {
@@ -149,10 +170,6 @@ main .full_left_list ul li:not(:first-child) {
 }
 
 
-main .full_left_list ul .grey {
-    height: 195px;
-}
-
 main .full_left_list ul .white .container_50 {
     padding-top: 0;
 }
@@ -187,6 +204,14 @@ main .full_right_list h3, main .full_left_list h3 {
         width: 87%;
         margin: 0 auto;
     }
+
+    main .full_left_list h1 {
+        padding-top: 60px;
+    }
+
+    main .full_left_list ul {
+        height: 600px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -215,10 +240,17 @@ main .image_list_block {
     width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+    main .image_list_block {
+        height: 2795px;
+    }
+}
+
 main .image_list_block ul {
     width: 100%;
     height: 100%;
 }
+
 
 main .image_list_block ul .list_item {
     height: 520px;
@@ -227,6 +259,17 @@ main .image_list_block ul .list_item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    main .image_list_block ul .list_item {
+        height: 920px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 main .image_list_block ul .left_image_block {
@@ -251,6 +294,26 @@ main .image_list_block ul .list_item .number {
     background: #5e42b0;
 }
 
+@media screen and (max-width: 768px) {
+    main .image_list_block ul .list_item .number {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        position: absolute;
+        left: 4.5%;
+        top: 505px;
+        vertical-align: middle;
+        width: 15%;
+        height: 120px;
+        background: #5e42b0;
+    }
+
+    main .image_list_block ul .list_item:not(:first-child) .number {
+        top: 496px;
+    }
+}
+
 main .image_list_block ul .list_item .number h3 {
     display: flex;
     flex-direction: row;
@@ -263,8 +326,25 @@ main .image_list_block ul .list_item .number h3 {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+    .image_list_block ul .list_item .number h3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        height: 1.5em;
+        border-bottom: 5px solid #8f7bc8;
+        color: #f6f4fa;
+        width: 20%;
+        font-size: 1.5em;
+        margin: 0 auto;
+    }
+}
+
+
+
 main .image_list_block ul .list_item:first-child .image_block {
-    background: url("../static/pic/shutterstock.jpg") no-repeat;
+    background: url("../static/pic/shutterstock.jpg") 50% no-repeat;
     background-size: cover;
 }
 
@@ -274,15 +354,40 @@ main .image_list_block ul .list_item:nth-child(2) .image_block {
     float: right;
 }
 
+@media screen and (max-width: 768px) {
+    main .image_list_block ul .list_item:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+}
+
 main .image_list_block ul .list_item:last-child .image_block {
-    background: url("../static/pic/work_it.jpg") no-repeat;
+    background: url("../static/pic/work_it.jpg") 0% 50% no-repeat;
     background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+    main .image_list_block  .image_block {
+        height: 585px;
+        width: 100%;
+    }
 }
 
 main .image_list_block ul .list_item .text_block {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    main .image_list_block ul .list_item .text_block {
+        height: 280px;
+        justify-content: flex-start;
+    }
+
+    main .image_list_block ul .list_item:not(:first-child) .text_block {
+        height: 275px;
+        justify-content: flex-start;
+    }
 }
 
 main .image_list_block ul .list_item .container_75 {
@@ -313,9 +418,18 @@ main .image_list_block ul .list_item:last-child .text {
     line-height: 1.1em;
 }
 
+
 main .image_list_block ul .list_item h2 {
     font-size: 4em;
     color: #e7e7e7;
+}
+
+@media screen and (max-width: 768px) {
+    main .image_list_block ul .list_item h2 {
+        font-size: 5.5em;
+        letter-spacing: 1px;
+    }
+
 }
 
 main .image_list_block ul .list_item .container_70 {
@@ -323,3 +437,21 @@ main .image_list_block ul .list_item .container_70 {
     height: 180px;
 }
 
+@media screen and (max-width: 768px) {
+    main .image_list_block ul .list_item .container_75,
+    main .image_list_block ul .list_item .container_70 {
+        width: 92%;
+        justify-content: flex-start;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main .image_list_block ul .list_item .container_75 .text,
+    main .image_list_block ul .list_item .container_70 .text {
+        width: 95%;
+        padding: 0px;
+        margin: 0;
+        font-size: 1.6em;
+    }
+}

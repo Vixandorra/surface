@@ -51,6 +51,11 @@ li {
 }
 
 
+.container_80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
 
 @media screen and (max-width: 768px) {
     .container_80 {
@@ -95,6 +100,13 @@ li {
 .container_50_const {
     width: 50%;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .container_50_const {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 
